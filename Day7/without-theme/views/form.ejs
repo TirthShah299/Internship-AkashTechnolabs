@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Signup Form</h1>
+    <form action="/form-process" method="POST">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" placeholder="Enter your first name" required/></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lname" placeholder="Enter your last name" required/></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email_id" placeholder="Enter your email" required/></td>
+            </tr>
+            <tr>
+                <td>Mobile No.</td>
+                <td><input type="number" name="mobile_no" placeholder="Enter your personal mobile" required/></td>
+            </tr>
+            <tr>
+                <td>Whatsapp No.</td>
+                <td><input type="number" name="wp_no" placeholder="Enter your alternate No."/></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" placeholder="Enter your current password" required/></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password</td>
+                <td><input type="password" name="re-password" placeholder="Re-enter password " required/></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>Feedback</td>
+                <td><input type="text" name="feeedback" placeholder="Give your feedback" required/></td>
+            </tr>
+            <tr>
+                <td>Rating</td>
+                <td><input type="text" name="Rating" placeholder="Rating outof 5" required/></td>
+            </tr>
+            <tr>
+                <td><input type="submit"/></td>
+            </tr>
+        </table>
+    </form>
+        
+    </body>
+    </html>
