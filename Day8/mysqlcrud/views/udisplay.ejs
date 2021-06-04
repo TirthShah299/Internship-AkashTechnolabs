@@ -1,0 +1,25 @@
+<a href="/users/uform">Add Record</a>
+<% if(db_rows_array.length > 0){ %>
+
+    <table border='1'>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <% for(var i = 0; i < db_rows_array.length; i++){ %>
+            <tr>
+
+                <td><%= db_rows_array[i].user_id %></td>
+                <td><%= db_rows_array[i].user_name %></td>
+                <td><%= db_rows_array[i].user_age %></td>
+                <td><%= db_rows_array[i].user_gender %></td>
+                
+            </tr>
+        <%}%> 
+    </table>
+
+<% }else{ %>
+    <br>No records found
+    <% } %>

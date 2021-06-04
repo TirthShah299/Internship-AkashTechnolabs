@@ -1,0 +1,25 @@
+<a href="/students/sform">Add Record</a>
+<% if(db_rows_array.length > 0){ %>
+
+    <table border='1'>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Mobile No.</th>
+            <th>Class</th>
+        </tr>
+        <% for(var i = 0; i < db_rows_array.length; i++){ %>
+            <tr>
+
+                <td><%= db_rows_array[i].student_id %></td>
+                <td><%= db_rows_array[i].student_name %></td>
+                <td><%= db_rows_array[i].student_mobile %></td>
+                <td><%= db_rows_array[i].student_class %></td>
+                
+            </tr>
+        <%}%> 
+    </table>
+
+<% }else{ %>
+    No records found
+    <% } %>
